@@ -1,28 +1,56 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>회원 로그인 연습문제</title>
+    <title></title>
+    
+    
+    <script>
+            // 문서객체로 캐스팅
+            // 버튼을 캐스팅
+            document.getElementById('go_naver_btn').onclick = function() {
+
+                var userid = document.querySelector('#userid');
+
+                var uid = userid.value;
+
+                if (uid.length < 1) {
+                    alert('아이디는 필수 입력항목입니다.');
+                } else {
+                    alert('사용자가 입력한 아이디는 ' + userid.value + '입니다.');
+                }
+                
+                var alink = document.querySelector('a');
+                alink.style.display='block';
+                alink.style.backgroundColor='blue';
+                alink.style.fontSize=32;
+                alink.style.color='yellow';
+                alink.style.fontWeight='bold';
+                alink.style.textAlign='center';
+            
+    </script>
 </head>
 
 <body>
-    <h3>회원 로그인</h3>
-    <hr>
     
- 
+   <div id="header-1">1</div>
+    <div id="header-2">2</div>
 
-    아이디(이메일)<br>
-    <input type="email"><br>
-    비밀번호<br>
-    <input type = "password" name="pw"> <br>
-    이름<br>
-    <input type= text name ="이름"><br>
-    사진 <br>
-    <input type="file" name = "userPhoto"><br>
+    <input type="text" value="test" id="userid"><br>
+
+    <br>
+
+    <input type="button" value="네이버로 이동" id="go_naver_btn">
+    <a href="http://www.naver.com">네이버로 이동</a>
+    
     
     <br>
-    <input type="submit" value="로그인">
     
+    <input type="submit" value="H1-0 삭제">
+
+
+
 </body>
 </html>
+

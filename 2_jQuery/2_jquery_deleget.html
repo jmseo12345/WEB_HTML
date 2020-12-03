@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이젠트 연결 범위 한정</title>
+        <!--jQuery 라이브러리 로드-->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    
+      <style>
+    
+        h1{
+            border : 3px solid #AAA;
+        }
+    </style>
+</head>
+    
+    <script>
+    $(document).ready(function(){
+      /* $('h1').click(function(){
+           var length = $('h1').length;
+           var html = $(this).html();
+           $('#wrap').append('<h1>'+length+' -' +html+'</h1>');
+       });*/
+        
+        //범위를 지정하고, 해당 범위 안의 엘리먼트를 지정해서 이벤트를 정의해줄 수 있다.
+        //해당 범위에 특정 엘리먼트가 추가되도 이벤트를 적용하게된다.
+        //wrap 안에 있는 h1들은 다 클릭이벤트를 주겠다. (추가되는 h1들도)
+        $('#wrap').on('click','h1',function(){
+            
+           var length = $('h1').length;
+           var html = $(this).html();
+            
+           $('#wrap').append('<h1>'+length+' -' +html+'</h1>');
+        
+    });
+        
+});
+    </script>
+    
+  
+
+<body>
+    
+    <div id = "wrap">
+        <h1>header</h1>
+    </div>
+   
+    
+</body>
+</html>

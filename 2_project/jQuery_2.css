@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Yeon+Sung&display=swap');
+
+
+*{
+    padding:0px;
+    margin:0;
+}
+
+body {
+
+font-family: 'Yeon Sung', cursive;
+
+}
+
+
+h1 { 
+ margin: 20px;
+}
+
+hr {
+    border: 1px solid #EEE;
+}
+
+h2{
+padding : 15px 40px;
+
+}
+
+#regtable>table{
+    
+    margin:10px  40px; 
+    width:600px;
+}
+
+#regtable>table td{
+    width : 140px;
+    padding: 10px;
+    vertical-align: top;
+    text-align: center;
+}
+
+#regtable>table input{
+    width:100px;
+    height: 25px;
+}
+
+#retable>table label{
+    //display: block; 
+}
+
+#regtable>table input[type=submit]{
+    background-color: aquamarine;
+    width:100px;
+    height: 50px;
+    border: 2px solid #EEE;
+}
+
+div.msg {
+   color:red;
+    display: none;
+}
+
+#listT {
+    margin:10px 50px;
+    width:600px;
+    border-collapse: collapse;
+}
+
+
+
+#listT th {
+    padding:10px;
+    border: 2px solid #AAA;
+    background-color: #fff;
+}
+
+
+div>h2 {
+    padding: 20px;
+    font-size: 22px;
+}
+
+div>a {
+    text-decoration-line: underline;
+}
+
+div.edit_div{
+    background-color: azure;
+    
+    width: 300px;
+    padding:10px;
+    
+    border:1px solid #aaa;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #ddd;
+    
+    position: absolute;
+        
+        top:50px;
+    left:100px;
+    
+   display:none;
+}
+
+
+div.edit_header{
+overflow: hidden;
+    padding:10px;
+}
+
+
+
+div.edit_header h2  {
+float: left
+}
+
+div.edit_header a{
+    margin-top: 25px;
+    float: right;
+    
+}
+
+
+
+#editform {
+    margin: 15px;
+}
+
+#editform>table {
+    width:90%;
+}
+
+#editform>table td {
+    padding:5px;
+    text-align: center;
+}
+
+
+  
+
+#editform input[type=submit] {
+    margin:20px;
+    background-color: aquamarine;
+    padding:10px;
+    width:50%;
+    font-size:1.2em;
+    font-family:'Stylish', sans-serif;
+    font-weight:bold;
+    color: darkgreen;
+    border: 1px solid darkgreen;
+    
+    
+}
+
+
+
+
+
+
+
